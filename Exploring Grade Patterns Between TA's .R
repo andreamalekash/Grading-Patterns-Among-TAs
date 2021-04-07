@@ -5,7 +5,7 @@ library("psych")
 library("agricolae")
 
 #Load data
-scores <- read.csv("/Users/andreaash/Student scores.csv") #save student scores as csv file (rows = Students, columns = Score, TA)
+scores <- read.csv("your file path here.csv") #save student scores as csv file (rows = Students, columns = Score, TA)
 scores$TA <- factor(scores$TA) #if your TA identifiers are numeric, this will make them factors
 
 #Get a summary of each groups's mean and variance 
