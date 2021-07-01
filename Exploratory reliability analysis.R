@@ -8,7 +8,7 @@ library("emmeans")
 library("plyr")
 
 #Load data
-scores <- read.csv("your data here") #save student scores as csv file (rows = Students, columns = Score, TA)
+scores <- read.csv("Student scores.csv") #save student scores as csv file (rows = Students, columns = Score, TA)
 scores$TA <- factor(scores$TA) #if your TA identifiers are numeric, this will make them factors
 scores$TA <- revalue(scores$TA, c("1" = "A", "2" = "B", "3" = "C", "4" = "D", "5" = "E", "6"="F", "7" = "G", "8" = "H", "9" = "I", "10" = "J", "11" = "K", "12" = "L", "13" = "M", "14" = "N", "15" = "O", "16" = "P", "17" = "Q") ) #Changing numbers to characters to represent TA's (optional) 
 
